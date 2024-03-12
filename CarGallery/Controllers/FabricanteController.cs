@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarGallery;
 using CarGallery.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarGallery.Controllers
 {
+    [Authorize]
     public class FabricanteController : Controller
     {
         private readonly CarGalleryContext _context;

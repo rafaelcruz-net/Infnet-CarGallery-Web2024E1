@@ -1,8 +1,10 @@
 ﻿using CarGallery.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarGallery.Controllers
 {
+    [Authorize]
     public class CarroController : Controller
     {
         private readonly CarGalleryContext _context;
